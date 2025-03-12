@@ -4,7 +4,7 @@ public class Exceptions {
     public static void main(String[] args) {
         String[] strArray = {"str1", "str2", "str3", "str4"};
         System.out.println("================");
-        pause();
+        //pause();
         System.out.println("Ура");
         uncheckedException(strArray);
 
