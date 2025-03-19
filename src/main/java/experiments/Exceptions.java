@@ -2,20 +2,19 @@ package experiments;
 
 public class Exceptions {
     public static void main(String[] args) {
-        String[] strArray = {"str1", "str2", "str3", "str4"};
-        System.out.println("================");
+        String[] strArray = {"str1", "str2", "str3"};
+        System.out.println("========");
         //pause();
         System.out.println("Ура");
         uncheckedException(strArray);
-
     }
 
     private static void uncheckedException(String[] strArray) {
-        try{
-            for (int i = 0; i < 3; i++) {
+        try {
+            for (int i = 0; i < 4; i++) {
                 System.out.println(strArray[i]);
             }
-            }catch (Exception e){
+        } catch (Exception e) {
             e.getStackTrace();
             System.out.println("created exception");
             throw new RuntimeException(e);
@@ -23,7 +22,7 @@ public class Exceptions {
         System.out.println("program is working");
     }
 
-    private static void pause() {
+    public void pause() {
         try {
             checkedException();
         } catch (InterruptedException e) {
